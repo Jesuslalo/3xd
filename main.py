@@ -25,5 +25,7 @@ def index05():
 @app.route('/index06')
 def index06():
      return render_template('index06.html')
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Cambiar a host='0.0.0.0' para hacer que sea accesible externamente
+    app.run(debug=True, host='0.0.0.0', port=5000)
